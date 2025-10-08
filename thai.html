@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สระเปลี่ยนรูป ลดรูป โดยครูหมิว- ป.1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            box-sizing: border-box;
+        }
+        
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            font-family: 'Kanit', sans-serif;
+        }
+        
+        .bounce-in {
+            animation: bounceIn 0.6s ease-out;
+        }
+        
+        @keyframes bounceIn {
+            0% { transform: scale(0.3); opacity: 0; }
+            50% { transform: scale(1.05); }
+            70% { transform: scale(0.9); }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        
+        .shake {
+            animation: shake 0.5s ease-in-out;
+        }
+        
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            75% { transform: translateX(5px); }
+        }
+        
+        .pulse-ring {
+            animation: pulseRing 1.5s infinite;
+        }
+        
+        @keyframes pulseRing {
+            0% { transform: scale(1); opacity: 1; }
+            100% { transform: scale(1.2); opacity: 0; }
+        }
+        
+        .float {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .timer-warning {
+            animation: timerPulse 0.5s infinite;
+        }
+        
+        @keyframes timerPulse {
+            0%, 100% { background-color: #ef4444; }
+            50% { background-color: #dc2626; }
+        }
+    </style>
+</head>
+<body class="min-h-full bg-gradient-to-br from-pink-200 via-purple-200 to-blue-200">
+    <div class="container mx-auto px-4 py-6">
+        <!-- Header -->
+        <div class="text-center mb-8">
+            <h1 class="text-4xl font-bold text-purple-800 mb-2 bounce-in">🌟 สระเปลี่ยนรูป ลดรูป ห้องเรียนครูหมิว🌟</h1>
+            <p class="text-xl text-purple-600">สำหรับนักเรียนชั้นประถมศึกษาปีที่ 1</p>
+        </div>
+
+        <!-- Main Content -->
+        <div id="mainContent" class="space-y-8">
+            <!-- Learning Section -->
+            <div class="bg-white rounded-3xl shadow-xl p-8 border-4 border-yellow-300">
+                <h2 class="text-3xl font-bold text-center text-purple-700 mb-6">📚 มาเรียนรู้กันเถอะ!</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- สระ อัว -->
+                    <div class="bg-gradient-to-br from-pink-100 to-pink-200 rounded-2xl p-6 text-center hover:scale-105 transition-transform">
+                        <div class="text-6xl mb-4">🐄</div>
+                        <div class="text-4xl font-bold text-pink-700 mb-2">อัว</div>
+                        <div class="text-2xl text-pink-600">สวน</div>
+                        <div class="text-lg text-gray-600 mt-2">อัว → อว</div>
+                    </div>
+
+                    <!-- สระ เอีย -->
+                    <div class="bg-gradient-to-br from-blue-100 to-blue-200 rounded-2xl p-6 text-center hover:scale-105 transition-transform">
+                        <div class="text-6xl mb-4">🦆</div>
+                        <div class="text-4xl font-bold text-blue-700 mb-2">เอีย</div>
+                        <div class="text-2xl text-blue-600">เป็ด</div>
+                        <div class="text-lg text-gray-600 mt-2">เอะ → เอีย</div>
+                    </div>
+
+                    <!-- สระ เอือ -->
+                    <div class="bg-gradient-to-br from-green-100 to-green-200 rounded-2xl p-6 text-center hover:scale-105 transition-transform">
+                        <div class="text-6xl mb-4">🐅</div>
+                        <div class="text-4xl font-bold text-green-700 mb-2">เอือ</div>
+                        <div class="text-2xl text-green-600">เสือ</div>
+                        <div class="text-lg text-gray-600 mt-2">เอีย → เอือ</div>
+                    </div>
+
+                    <!-- สระ เอา (ส้ม) -->
+                    <div class="bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-2xl p-6 text-center hover:scale-105 transition-transform">
+                        <div class="text-6xl mb-4">🍚</div>
+                        <div class="text-4xl font-bold text-yellow-700 mb-2">เอา</div>
+                        <div class="text-2xl text-yellow-600">ส้ม</div>
+                        <div class="text-lg text-gray-600 mt-2">โอะ → เอา</div>
+                    </div>
+
+                    <!-- สระ เอีย (เหรียญ) -->
+                    <div class="bg-gradient-to-br from-orange-100 to-orange-200 rounded-2xl p-6 text-center hover:scale-105 transition-transform">
+                        <div class="text-6xl mb-4">🪙</div>
+                        <div class="text-4xl font-bold text-orange-700 mb-2">เอีย</div>
+                        <div class="text-2xl text-orange-600">เหรียญ</div>
+                        <div class="text-lg text-gray-600 mt-2">อัว → เอีย</div>
+                    </div>
+
+                    <!-- สระ เอือ (เนื้อ) -->
+                    <div class="bg-gradient-to-br from-red-100 to-red-200 rounded-2xl p-6 text-center hover:scale-105 transition-transform">
+                        <div class="text-6xl mb-4">🥩</div>
+                        <div class="text-4xl font-bold text-red-700 mb-2">เอือ</div>
+                        <div class="text-2xl text-red-600">เนื้อ</div>
+                        <div class="text-lg text-gray-600 mt-2">เ-ือ → เอือ</div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-8">
+                    <button onclick="startGame()" class="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-bold py-4 px-8 rounded-full text-2xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all float">
+                        🎮 เริ่มเล่นเกม!
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Game Section -->
+        <div id="gameSection" class="hidden">
+            <div class="bg-white rounded-3xl shadow-xl p-8 border-4 border-green-300">
+                <div class="flex justify-between items-center mb-6">
+                    <h2 class="text-3xl font-bold text-green-700">🎯 เกมตอบคำถาม</h2>
+                    <div class="flex items-center space-x-4">
+                        <div class="bg-blue-100 rounded-full px-4 py-2">
+                            <span class="text-blue-700 font-bold">คะแนน: <span id="score">0</span></span>
+                        </div>
+                        <div id="timer" class="bg-red-500 text-white rounded-full px-4 py-2 font-bold">
+                            เวลา: 3
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mb-6">
+                    <div class="text-lg text-gray-600 mb-2">ข้อที่ <span id="questionNumber">1</span> จาก 10</div>
+                    <div class="w-full bg-gray-200 rounded-full h-3">
+                        <div id="progressBar" class="bg-gradient-to-r from-green-400 to-blue-500 h-3 rounded-full transition-all duration-300" style="width: 10%"></div>
+                    </div>
+                </div>
+
+                <div id="questionContainer" class="text-center">
+                    <div class="text-8xl mb-6" id="questionImage">🐄</div>
+                    <h3 class="text-3xl font-bold text-gray-800 mb-8" id="questionText">คำว่า "วัว" ใช้สระอะไร?</h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4" id="answerOptions">
+                        <button class="answer-btn bg-gradient-to-br from-pink-400 to-pink-500 hover:from-pink-500 hover:to-pink-600 text-white font-bold py-4 px-6 rounded-2xl text-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all" onclick="selectAnswer(0)">
+                            อัว
+                        </button>
+                        <button class="answer-btn bg-gradient-to-br from-blue-400 to-blue-500 hover:from-blue-500 hover:to-blue-600 text-white font-bold py-4 px-6 rounded-2xl text-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all" onclick="selectAnswer(1)">
+                            เอีย
+                        </button>
+                        <button class="answer-btn bg-gradient-to-br from-green-400 to-green-500 hover:from-green-500 hover:to-green-600 text-white font-bold py-4 px-6 rounded-2xl text-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all" onclick="selectAnswer(2)">
+                            เอือ
+                        </button>
+                    </div>
+                </div>
+
+                <div id="resultContainer" class="hidden text-center">
+                    <div id="resultIcon" class="text-8xl mb-4">✅</div>
+                    <div id="resultText" class="text-3xl font-bold mb-4">ถูกต้อง!</div>
+                    <div id="explanation" class="text-xl text-gray-600 mb-6">วัว ใช้สระ "อัว" (อัว)</div>
+                    <button onclick="nextQuestion()" class="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-bold py-3 px-6 rounded-full text-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all">
+                        ข้อต่อไป →
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Final Results -->
+        <div id="finalResults" class="hidden">
+            <div class="bg-white rounded-3xl shadow-xl p-8 border-4 border-yellow-300 text-center">
+                <div class="text-8xl mb-6">🎉</div>
+                <h2 class="text-4xl font-bold text-purple-700 mb-4">เก่งมาก!</h2>
+                <div class="text-2xl text-gray-700 mb-6">คะแนนของคุณ: <span id="finalScore" class="font-bold text-green-600">0</span>/10</div>
+                <div id="finalMessage" class="text-xl text-gray-600 mb-8">คุณทำได้ดีมาก! เก่งจริงๆ</div>
+                <button onclick="restartGame()" class="bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white font-bold py-4 px-8 rounded-full text-2xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all">
+                    🔄 เล่นใหม่
+                </button>
+                <button onclick="backToLesson()" class="ml-4 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-bold py-4 px-8 rounded-full text-2xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all">
+                    📚 กลับไปเรียน
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const questions = [
+            {
+                image: "🐄",
+                word: "วัว",
+                question: 'คำว่า "วัว" ใช้สระอะไร?',
+                options: ["อัว", "เอีย", "เอือ"],
+                correct: 1,
+                explanation: 'วัว ใช้สระ "อัว" (-ัว)'
+            },
+            {
+                image: "🦆",
+                word: "เป็ด",
+                question: 'คำว่า "เป็ด" ใช้สระอะไร?',
+                options: ["เอะ", "เอีย", "เอือ"],
+                correct: 1,
+                explanation: 'เป็ด ใช้สระ "เอะ" (เอะ)'
+            },
+            {
+                image: "🐅",
+                word: "เสือ",
+                question: 'คำว่า "เสือ" ใช้สระอะไร?',
+                options: ["เอา", "เอีย", "เอือ"],
+                correct: 3,
+                explanation: 'เสือ ใช้สระ "เอือ" (เ-ือ)'
+            },
+            {
+                image: "🍚",
+                word: "มด",
+                question: 'คำว่า "มด" ใช้สระอะไร?',
+                options: ["โอะ", "เอีย", "เอือ"],
+                correct: 1,
+                explanation: 'มด ใช้สระ "โอะ" (โอะ)'
+            },
+            {
+                image: "🪙",
+                word: "เหรียญ",
+                question: 'คำว่า "เหรียญ" ใช้สระอะไร?',
+                options: ["เอา", "เอีย", "เอือ"],
+                correct: 2,
+                explanation: 'เหรียญ ใช้สระ "เอีย" (เ-ีย)'
+            },
+            {
+                image: "🥩",
+                word: "เนื้อ",
+                question: 'คำว่า "เนื้อ" ใช้สระอะไร?',
+                options: ["เอา", "เอีย", "เอือ"],
+                correct: 3,
+                explanation: 'เนื้อ ใช้สระ "เอือ" (เ-ือ)'
+            },
+            {
+                image: "🏠",
+                word: "เรือน",
+                question: 'คำว่า "เรือน" ใช้สระอะไร?',
+                options: ["เอา", "เอีย", "เอือ"],
+                correct: 3,
+                explanation: 'เรือน ใช้สระ "เอือ" (เ-ือ)'
+            },
+            {
+                image: "🌾",
+                word: "เก่า",
+                question: 'คำว่า "เก่า" ใช้สระอะไร?',
+                options: ["เอา", "เอีย", "เอือ"],
+                correct: 1,
+                explanation: 'เก่า ใช้สระ "เอา" (เ-า)'
+            },
+            {
+                image: "🎵",
+                word: "เพลง",
+                question: 'คำว่า "เพลง" มีสระ "เอ" ธรรมดา ไม่ใช่สระเปลี่ยนรูป ลดรูป ใช่หรือไม่?',
+                options: ["ใช่", "ไม่ใช่", "ไม่แน่ใจ"],
+                correct: 1,
+                explanation: 'ถูกต้อง! เพลง ใช้สระ "เอ" ธรรมดา ไม่ใช่สระเปลี่ยนรูป ลดรูป'
+            },
+            {
+                image: "🐘",
+                word: "เคียง",
+                question: 'คำว่า "เคียง" ใช้สระอะไร?',
+                options: ["เอา", "เอีย", "เอือ"],
+                correct: 2,
+                explanation: 'เคียง ใช้สระ "เอีย" (เ-ีย)'
+            }
+        ];
+
+        let currentQuestion = 0;
+        let score = 0;
+        let timeLeft = 3;
+        let timerInterval;
+        let gameActive = false;
+
+        // Background music simulation (visual feedback only)
+        function playBackgroundMusic() {
+            // Visual indication of music playing
+            document.body.style.background = 'linear-gradient(45deg, #ff9a9e, #fecfef, #fecfef, #ff9a9e)';
+            document.body.style.backgroundSize = '400% 400%';
+            document.body.style.animation = 'gradientShift 4s ease infinite';
+            
+            // Add CSS for gradient animation
+            const style = document.createElement('style');
+            style.textContent = `
+                @keyframes gradientShift {
+                    0% { background-position: 0% 50%; }
+                    50% { background-position: 100% 50%; }
+                    100% { background-position: 0% 50%; }
+                }
+            `;
+            document.head.appendChild(style);
+        }
+
+        function startGame() {
+            document.getElementById('mainContent').classList.add('hidden');
+            document.getElementById('gameSection').classList.remove('hidden');
+            currentQuestion = 1;
+            score = 1;
+            gameActive = true;
+            playBackgroundMusic();
+            showQuestion();
+        }
+
+        function showQuestion() {
+            if (currentQuestion >= questions.length) {
+                endGame();
+                return;
+            }
+
+            const question = questions[currentQuestion];
+            document.getElementById('questionNumber').textContent = currentQuestion + 1;
+            document.getElementById('questionImage').textContent = question.image;
+            document.getElementById('questionText').textContent = question.question;
+            document.getElementById('progressBar').style.width = ((currentQuestion + 1) / questions.length * 100) + '%';
+
+            // Update answer options
+            const answerButtons = document.querySelectorAll('.answer-btn');
+            answerButtons.forEach((btn, index) => {
+                btn.textContent = question.options[index];
+                btn.disabled = false;
+                btn.classList.remove('bg-green-500', 'bg-red-500', 'shake');
+                btn.classList.add('hover:scale-105');
+            });
+
+            document.getElementById('questionContainer').classList.remove('hidden');
+            document.getElementById('resultContainer').classList.add('hidden');
+
+            startTimer();
+        }
+
+        function startTimer() {
+            timeLeft = 3;
+            updateTimerDisplay();
+            
+            timerInterval = setInterval(() => {
+                timeLeft--;
+                updateTimerDisplay();
+                
+                if (timeLeft <= 0) {
+                    clearInterval(timerInterval);
+                    selectAnswer(-1); // Time's up
+                }
+            }, 1000);
+        }
+
+        function updateTimerDisplay() {
+            const timerElement = document.getElementById('timer');
+            timerElement.textContent = `เวลา: ${timeLeft}`;
+            
+            if (timeLeft <= 1) {
+                timerElement.classList.add('timer-warning');
+            } else {
+                timerElement.classList.remove('timer-warning');
+            }
+        }
+
+        function selectAnswer(selectedIndex) {
+            if (!gameActive) return;
+            
+            clearInterval(timerInterval);
+            gameActive = false;
+
+            const question = questions[currentQuestion];
+            const answerButtons = document.querySelectorAll('.answer-btn');
+            
+            // Disable all buttons
+            answerButtons.forEach(btn => {
+                btn.disabled = true;
+                btn.classList.remove('hover:scale-105');
+            });
+
+            let isCorrect = false;
+            let resultIcon = "❌";
+            let resultText = "เวลาหมด!";
+
+            if (selectedIndex === -1) {
+                // Time's up
+                resultIcon = "⏰";
+                resultText = "เวลาหมด!";
+            } else if (selectedIndex === question.correct) {
+                // Correct answer
+                isCorrect = true;
+                score++;
+                resultIcon = "✅";
+                resultText = "ถูกต้อง!";
+                answerButtons[selectedIndex].classList.add('bg-green-500');
+                answerButtons[selectedIndex].classList.add('bounce-in');
+            } else {
+                // Wrong answer
+                resultIcon = "❌";
+                resultText = "ผิด!";
+                answerButtons[selectedIndex].classList.add('bg-red-500', 'shake');
+                answerButtons[question.correct].classList.add('bg-green-500');
+            }
+
+            // Update score display
+            document.getElementById('score').textContent = score;
+
+            // Show result
+            document.getElementById('resultIcon').textContent = resultIcon;
+            document.getElementById('resultText').textContent = resultText;
+            document.getElementById('explanation').textContent = question.explanation;
+            
+            document.getElementById('questionContainer').classList.add('hidden');
+            document.getElementById('resultContainer').classList.remove('hidden');
+
+            // Play sound effect (visual feedback)
+            if (isCorrect) {
+                document.body.style.animation = 'none';
+                document.body.style.background = 'linear-gradient(45deg, #4ade80, #22c55e)';
+                setTimeout(() => {
+                    playBackgroundMusic();
+                }, 1000);
+            }
+        }
+
+        function nextQuestion() {
+            currentQuestion++;
+            gameActive = true;
+            showQuestion();
+        }
+
+        function endGame() {
+            document.getElementById('gameSection').classList.add('hidden');
+            document.getElementById('finalResults').classList.remove('hidden');
+            document.getElementById('finalScore').textContent = score;
+
+            let message = "";
+            if (score >= 9) {
+                message = "เยี่ยมมาก! คุณเก่งจริงๆ 🌟";
+            } else if (score >= 7) {
+                message = "ดีมาก! คุณทำได้ดี 👏";
+            } else if (score >= 5) {
+                message = "ดี! ลองเล่นใหม่เพื่อคะแนนที่ดีกว่า 💪";
+            } else {
+                message = "ไม่เป็นไร ลองเรียนและเล่นใหม่นะ 😊";
+            }
+            
+            document.getElementById('finalMessage').textContent = message;
+
+            // Stop background music animation
+            document.body.style.animation = 'none';
+            document.body.style.background = 'linear-gradient(to bottom right, #fce7f3, #e0e7ff, #dbeafe)';
+        }
+
+        function restartGame() {
+            document.getElementById('finalResults').classList.add('hidden');
+            startGame();
+        }
+
+        function backToLesson() {
+            document.getElementById('finalResults').classList.add('hidden');
+            document.getElementById('mainContent').classList.remove('hidden');
+            
+            // Reset background
+            document.body.style.animation = 'none';
+            document.body.style.background = 'linear-gradient(to bottom right, #fce7f3, #e0e7ff, #dbeafe)';
+        }
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'98b26790650a7335',t:'MTc1OTg5MjYwMC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
